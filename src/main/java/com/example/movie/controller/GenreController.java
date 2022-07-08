@@ -2,11 +2,15 @@ package com.example.movie.controller;
 
 import java.util.UUID;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +28,8 @@ import com.example.movie.service.GenreService;
 @RequestMapping("/genre")
 public class GenreController {
 
+    private static final Logger logger = LogManager.getLogger(GenreController.class);
+
 	@Autowired
 	GenreService genreService;
 
@@ -37,7 +43,9 @@ public class GenreController {
 	}
 
 	@GetMapping("/find-all")
-	public ResponseEntity<?> findAll(@RequestParam(defaultValue = "0") int page,
+	public ResponseEntity<?> findAll(Authentication authentication, 
+			HttpServletRequest httpServletRequest,
+			@RequestParam(defaultValue = "0") int page,
 			@RequestParam(defaultValue = "10") int size, 
 			@RequestParam(defaultValue = "description") String sortBy,
 			@RequestParam(defaultValue = "asc") String sortDirection){

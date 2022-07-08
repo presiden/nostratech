@@ -2,6 +2,7 @@ package com.example.movie.entity;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -16,6 +17,7 @@ import javax.persistence.OneToMany;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -34,10 +36,13 @@ public class Users implements UserDetails{
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
     
+    @Column(nullable = false, unique = true)
     private String username;
     
+    @Column(nullable = false)
     private String password;
     
+    @Column(nullable = false, unique = true)
     private String email;
     
     private String phone;
@@ -55,32 +60,28 @@ public class Users implements UserDetails{
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return null;
+		SimpleGrantedAuthority auth = new SimpleGrantedAuthority(role);
+		return Collections.singletonList(auth);
 	}
 
 	@Override
 	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }

@@ -4,9 +4,12 @@ import java.util.UUID;
 
 import javax.validation.Valid;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +29,8 @@ import com.example.movie.service.CommentService;
 @RequestMapping("/comment")
 public class CommentController {
 
+    private static final Logger logger = LogManager.getLogger(CommentController.class);
+
 	@Autowired
 	CommentService commentService;
 	
@@ -39,6 +44,7 @@ public class CommentController {
 		}
 	}
 
+	@PreAuthorize("hasAnyAuthority(@authorityService.authorities)")
 	@GetMapping("/find-all")
 	public ResponseEntity<?> findAll(@RequestParam(defaultValue = "0") int page,
 			@RequestParam(defaultValue = "10") int size, 

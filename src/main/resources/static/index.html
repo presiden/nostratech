@@ -11,15 +11,30 @@
     <title>Nostra Movie</title>
 </head>
 <body>
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <h2>Nostra Movie</h2>
-    <video src="/movie/find-movie/f997329f-57a3-478c-b6cb-85b43ab99be9/84a95644-3559-4848-889b-2a207d771b2f" width="720px" height="480px" controls preload="none">
+    <video id="player" src="/movie/find-movie/f997329f-57a3-478c-b6cb-85b43ab99be9/84a95644-3559-4848-889b-2a207d771b2f" width="720px" height="480px" controls preload="none">
 
     </video>
+    <div class="form-group">
+    	<label>Top Gun: Maverick</label> 
+    	<div>
+    		<button type="button" class="btn btn-info" onclick="changeSource('c3f073e8-e75d-4934-9e89-9b0c4e56f992')"></button>
+    	</div>
+    	
+    </div>
+    <div class="form-group">
+    	<label>Doctor Strange in the Multiverse of Madness</label> 
+    	<div>
+    		<button type="button" class="btn btn-info" onclick="changeSource('f997329f-57a3-478c-b6cb-85b43ab99be9')"></button>
+    	</div>
+    </div>
 </div>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="custom.js"></script>
 
 </body>
 </html>

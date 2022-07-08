@@ -4,6 +4,8 @@ import java.util.UUID;
 
 import javax.validation.Valid;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
@@ -31,7 +33,9 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/movie")
 public class MovieController {
-	
+
+    private static final Logger logger = LogManager.getLogger(MovieController.class);
+    
 	@Autowired
 	MovieService movieService;
 
@@ -41,6 +45,7 @@ public class MovieController {
 			Response response = new Response(movieService.add(movie, file));
 			return new ResponseEntity<>(response, HttpStatus.OK);
 		}catch(Exception e) {
+			logger.error(e.getMessage());
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}

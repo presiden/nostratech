@@ -1,0 +1,40 @@
+2022-07-08 14:53:29,229 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 15060 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 14:53:29,245 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 14:53:29,249 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 14:53:47,173 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 19.594 seconds (JVM running for 24.671)
+2022-07-08 14:55:19,961 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 3164 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 14:55:19,985 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 14:55:19,988 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 14:55:32,680 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 13.899 seconds (JVM running for 18.588)
+2022-07-08 15:02:40,231 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 22520 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:02:40,234 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:02:40,236 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:02:50,303 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 10.524 seconds (JVM running for 12.017)
+2022-07-08 15:18:22,126 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 26052 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:18:22,131 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:18:22,132 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:18:44,600 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 22.955 seconds (JVM running for 24.255)
+2022-07-08 15:23:18,141 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 19152 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:23:18,154 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:23:18,157 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:23:38,560 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 21.94 seconds (JVM running for 28.171)
+2022-07-08 15:25:59,967 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 20068 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:25:59,993 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:25:59,999 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:26:24,697 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 26.775 seconds (JVM running for 31.223)
+2022-07-08 15:28:34,875 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 10500 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:28:34,878 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:28:34,879 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:28:46,045 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 11.587 seconds (JVM running for 12.764)
+2022-07-08 15:29:15,435 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 9516 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:29:15,438 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:29:15,440 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:29:25,605 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 10.552 seconds (JVM running for 11.713)
+2022-07-08 15:31:28,821 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 7296 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:31:28,824 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:31:28,825 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:31:37,184 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 8.781 seconds (JVM running for 9.95)
+2022-07-08 15:45:17,905 INFO o.s.b.StartupInfoLogger [main] Starting MovieApplication using Java 17.0.2 on LAPTOP-9HJ4GO9B with PID 18204 (C:\repository\latihan\movie\target\classes started by Developer in C:\repository\latihan\movie)
+2022-07-08 15:45:17,908 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-07-08 15:45:17,909 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-07-08 15:45:26,162 INFO o.s.b.StartupInfoLogger [main] Started MovieApplication in 8.669 seconds (JVM running for 9.945)
